@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+
+    <title>My Resume</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+@charset "utf-8";
+
+@import "https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700";
+
+@import "https://fonts.googleapis.com/css?family=Roboto";
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box
+}
+
+html {
+height:100%
+}
+
+body {
+height:100%;
+font-family:'Quicksand',sans-serif;
+color:rgba(0,0,0,0.6);
+box-sizing:border-box;
+font-size:14px;
+overflow:hidden;
+background:#fafafa
+}
+
+label {
+padding:0;
+margin:0
+}
+
+ul,li,ol {
+padding:0;
+margin:0
+}
+
+li {
+list-style:none
+}
+
+a,img {
+border:0;
+outline:none;
+text-decoration:none
+}
+
+input::-moz-focus-inner {
+border:0
+}
+
+bo {
+outline:none
+}
+
+img {
+max-width:100%;
+height:auto;
+vertical-align:bottom
+}
+
+.user-img.flex-1 img {
+display:block!important;
+flex:unset;
+width:100%;
+float:left;
+min-width:400px;
+padding:25px;
+border-radius:50%
+}
+
+.user-profile.flex-1 {
+display:block!important;
+float:left;
+flex:unset
+}
+
+.user-img > img:nth-child(1) {
+border-radius:50%
+}
+
+input,select,textarea,button {
+font-family:'Muli',sans-serif
+}
+
+input:focus,select:focus,textarea:focus,button:focus {
+outline:0
+}
+
+a {
+color:inherit;
+-webkit-transition:.5s;
+-o-transition:.5s;
+transition:.5s
+}
+
+p {
+margin-bottom:1.5em
+}
+
+h1,h2,h3,h4,h5,h6 {
+color:#000;
+font-family:"Quicksand",Arial,sans-serif;
+font-weight:400;
+margin:0 0 30px
+}
+
+i.material-icons {
+font-size:inherit;
+line-height:inherit
+}
+
+::-webkit-scrollbar-track {
+-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+background-color:#F5F5F5
+}
+
+::-webkit-scrollbar {
+width:5px;
+height:5px;
+background-color:#F5F5F5
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+background-color:#777
+}
+
+.t-title-size {
+font-size:18px
+}
+
+.t-bold {
+font-weight:600
+}
+
+.t-normal {
+font-weight:400
+}
+
+.t-center {
+text-align:center
+}
+
+.t-right {
+text-align:right
+}
+
+.p-5 {
+padding:5px
+}
+
+.p-10 {
+padding:10px
+}
+
+.p-15 {
+padding:15px
+}
+
+.p-20 {
+padding:20px
+}
+
+.p-25 {
+padding:25px
+}
+
+.p-30 {
+padding:30px
+}
+
+.p-35 {
+padding:35px
+}
+
+.p-40 {
+padding:40px
+}
+
+.p-45 {
+padding:45px
+}
+
+.p-50 {
+padding:50px
+}
+
+.p-right5 {
+padding-right:5px
+}
+
+.p-right10 {
+padding-right:10px
+}
+
+.p-right15 {
+padding-right:15px
+}
+
+.p-right20 {
+padding-right:20px
+}
+
+.p-right25 {
+padding-right:25px
+}
+
+.p-right30 {
+padding-right:30px
+}
+
+.p-left5 {
+padding-left:5px
+}
+
+.p-left10 {
+padding-left:10px
+}
+
+.p-left15 {
+padding-left:15px
+}
+
+.p-left20 {
+padding-left:20px
+}
+
+.p-left25 {
+padding-left:25px
+}
+
+.p-left30 {
+padding-left:30px
+}
+
+.m-5 {
+margin:: 5px
+}
+
+.m-10 {
+margin:10px
+}
+
+.m-15 {
+margin:15px
+}
+
+.m-20 {
+margin:20px
+}
+
+.m-25 {
+margin:25px
+}
+
+.m-30 {
+margin:30px
+}
+
+.m-35 {
+margin:35px
+}
+
+.m-40 {
+margin:40px
+}
+
+.m-45 {
+margin:45px
+}
+
+.m-50 {
+margin:50px
+}
+
+.d-flex {
+display:flex
+}
+
+.d-flex-align-center {
+display:flex;
+align-items:center;
+flex-direction:row
+}
+
+.d-flex-align-center-column {
+display:flex;
+align-items:center;
+flex-direction:column
+}
+
+.flex-1 {
+flex:1
+}
+
+.flex-2 {
+flex:2
+}
+
+.wraper {
+width:100%;
+height:100%
+}
+
+.container {
+height:100%;
+display:flex;
+flex-direction:row
+}
+
+.left-content {
+width:300px;
+overflow-y:auto;
+height:100%;
+background:#fff;
+border-right:1px solid rgba(221,221,221,0.38);
+display:flex;
+flex-direction:column
+}
+
+.main-content {
+flex:1;
+overflow-y:auto;
+margin-left:10px;
+background:#fff;
+border-left:1px solid rgba(221,221,221,0.38)
+}
+
+.logo {
+display:flex;
+justify-content:flex-end
+}
+
+.logo a {
+color:#fff;
+text-align:right;
+background:#000;
+display:flex;
+flex-direction:column;
+padding:10px;
+font-size:20px;
+text-transform:uppercase;
+letter-spacing:5px;
+line-height:30px;
+font-weight:500
+}
+
+.nav {
+flex:1;
+justify-content:flex-end;
+margin:50px 0
+}
+
+.nav ul li,.nav ul li a {
+display:flex;
+justify-content:flex-end
+}
+
+.nav ul li a {
+padding:8px 0;
+text-transform:uppercase;
+color:rgba(0,0,0,0.4);
+letter-spacing:1px;
+font-weight:500;
+position:relative
+}
+
+.nav ul li a:hover {
+color:#000
+}
+
+.nav ul li a:after {
+content:"";
+width:0;
+height:1px;
+background:#000;
+position:absolute;
+bottom:5px;
+left:0;
+right:0;
+-webkit-transform:scaleX(0);
+-moz-transform:scaleX(0);
+-ms-transform:scaleX(0);
+-o-transform:scaleX(0);
+transform:scaleX(0);
+-webkit-transition:all .3s cubic-bezier(0.175,0.885,0.32,1.275);
+-moz-transition:all .3s cubic-bezier(0.175,0.885,0.32,1.275);
+-ms-transition:all .3s cubic-bezier(0.175,0.885,0.32,1.275);
+-o-transition:all .3s cubic-bezier(0.175,0.885,0.32,1.275);
+transition:all .3s cubic-bezier(0.175,0.885,0.32,1.275)
+}
+
+.nav ul li a:hover:after {
+width:100%;
+-webkit-transform:scaleX(1);
+-moz-transform:scaleX(1);
+-ms-transform:scaleX(1);
+-o-transform:scaleX(1);
+transform:scaleX(1)
+}
+
+.left-footer {
+color:rgba(0,0,0,0.6);
+display:flex;
+flex-direction:column;
+justify-content:flex-end
+}
+
+.foot-contact,.social-icons ul,.copy-rights {
+display:flex;
+justify-content:flex-end
+}
+
+.social-icons ul li {
+display:flex;
+justify-content:flex-end;
+flex-direction:row
+}
+
+.foot-contact ul {
+display:flex;
+flex-direction:column
+}
+
+.foot-contact ul li {
+justify-content:flex-end;
+display:flex;
+margin:2px 0
+}
+
+.foot-contact {
+margin:5px 0
+}
+
+.social-icons ul li a {
+padding:5px 8px;
+font-size:16px
+}
+
+.social-icons ul li a:hover {
+color:#000;
+transform:scale(1.2) translateY(-5px)
+}
+
+.user-profile {
+padding-left:50px
+}
+
+.sm-text {
+letter-spacing:2.1px;
+font-weight:400;
+color:#222;
+font-size:14px;
+font-family:"Roboto",sans-serif;
+text-transform:uppercase
+}
+
+.name {
+font-size:40px;
+text-transform:uppercase;
+margin:15px 0;
+color:#222;
+font-family:"Roboto",sans-serif;
+font-weight:600
+}
+
+.role {
+font-size:18px;
+font-weight:500;
+font-family:"Roboto",sans-serif;
+text-transform:uppercase;
+margin-bottom:20px;
+color:#222
+}
+
+.text {
+text-align:justify;
+text-justify:inter-word;
+font-size:15px
+}
+
+.pr-list {
+margin:30px 0
+}
+
+.pr-list ul li {
+margin-bottom:8px
+}
+
+.pr-list ul li i {
+width:18px
+}
+
+.social-icons-head ul {
+display:flex
+}
+
+.social-icons-head ul li a {
+padding:5px 10px;
+font-size:22px;
+transition:all .3s;
+display:flex
+}
+
+.social-icons-head ul li:nth-child(1) a {
+padding-left:0
+}
+
+.social-icons-head ul li a:hover {
+color:#000;
+transform:scale(1.2) translateY(-5px)
+}
+
+.sec-title {
+text-align:center;
+font-size:24px;
+margin-bottom:50px
+}
+
+.pg-title {
+font-size:28px;
+font-weight:500;
+text-transform:uppercase;
+letter-spacing:5px;
+line-height:1.8;
+color:#000
+}
+
+.pg-sub-title {
+margin-bottom:10px;
+display:block;
+font-size:10px;
+text-transform:uppercase;
+color:#999;
+font-weight:500;
+letter-spacing:5px
+}
+
+@media screen and (max-width:750px) {
+.user-profile.flex-1 {
+float:left;
+display:block!important
+}
+
+.d-flex-align-center {
+display:block
+}
+
+.left-content.p-30 {
+display:none
+}
+
+.text {
+text-align:justify;
+text-justify:inter-word;
+font-size:13px!important
+}
+}
+
+@font-face {
+font-family:'r';
+font-display:swap;
+src:url(media/r.woff2) format("embedded-opentype"),url(media/r.woff2) format("woff2"),url(media/r.woff2) format("woff"),url(media/r.woff2) format("truetype"),url(media/r.woff2) format("svg")
+}
+
+h1,h2,h3,h4,h5,h6,.name,.role {
+font-family:r
+}
+
+body {
+background:#ffdbeb;
+background:radial-gradient(circle,rgba(255,219,235,1) 25%,rgba(148,187,233,1) 75%)
+}
+
+.nav ul li a {
+color:#fff;
+font-size:21px
+}
+
+.left-content.p-30 {
+background:#ffdbeb;
+background:radial-gradient(circle,rgba(255,219,235,1) 25%,rgba(148,187,233,1) 75%)
+}
+
+.main-content {
+background:#ffdbeb;
+background:radial-gradient(circle,rgba(255,219,235,1) 25%,rgba(148,187,233,1) 75%);
+margin-left:0;
+border-left:0
+}
+
+.wraper div {
+text-shadow:1px 1px 1px #461111
+}
+    </style>
+  </head>
+  <body>
+    <div class="wraper">
+      <div class="container">
+        <div class="left-content p-30">
+          <div class="logo">
+            <a href="index.html">
+              <span>My</span>
+              <span>Resume</span>
+            </a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Profile">Work Profile</a></li>
+              <li><a href="#Portfolio">Education and<br><br>Certificates</a></li>
+              
+            </ul>
+          </div>
+          <div class="left-footer">
+            <div class="social-icons">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/aswedan95/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.xing.com/profile/Ahmed_Swedan2/cv"target="_blank"><i class="fa fa-xing" aria-hidden="true"></i></a></li>
+                    <li><a href="https://wa.me/+491778049149" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://telegram.me/ahmed95khaled"target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="tel:+491794184828"target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="foot-contact">
+              <ul>
+                
+                <li><a href = "mailto:akmsa42@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> me@aswedan.com</a></li>
+              </ul>
+            </div>
+            <div class="copy-rights">Copyright &copy;2022 All rights reserved</div>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="section1 p-30" id="Home">
+            <div class="sec-title">
+              
+              <div class="pg-title">My Profile</div>
+            </div>
+            <div class="d-flex-align-center">
+              <div class="user-img flex-1">
+                <img src="https://i.imgur.com/anoifCF.jpg">
+              </div>
+              <div class="user-profile flex-1">
+                <div class="pro-details">
+                  
+                  <div class="name">Ahmed Swedan</div>
+                  <div class="role">Certified Software Testing Engineer</div>
+                </div>  
+                <div class="text">Certified Software Quality Assurance tester with expertise in precise defect identification, meticulous bug tracking,
+                    and ensuring exceptional software quality. Committed to continuous learning and staying at the forefront of
+                    industry advancements.</div>
+                <div class="pr-list">
+                  <ul>
+                    <li><i class="fa fa-calendar" aria-hidden="true"></i> DOB July 1995</li>
+                    
+                    <li><a href = "mailto:akmsa42@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> me@aswedan.com </a></li>
+                    <li><a href="https://goo.gl/maps/SJjKQVFrqaHGZtaY7"target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> Hannover, Germany</a></li>
+                  </ul>
+                </div>
+                <div class="social-icons-head">
+                  <ul>
+                    <li><a href="https://www.linkedin.com/in/aswedan95/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.xing.com/profile/Ahmed_Swedan2/cv"target="_blank"><i class="fa fa-xing" aria-hidden="true"></i></a></li>
+                    <li><a href="https://wa.me/+491778049149" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://telegram.me/ahmed95khaled"target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="+491794184828"target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section1 p-30" id="About">
+            <div class="sec-title">
+              <div class="pg-sub-title"></div>
+              <div class="pg-title">About me</div>
+            </div>
+            <div class="d-flex-align-center">
+              <div class="text">
+                <div class="text">I hold a degree in Engineering from Helwan University, which I completed in 2019. Subsequently, I pursued advanced studies in Geoinformation in Germany, which enriched my knowledge and skills in the field of information technology.<br>During my academic journey, I discovered a genuine passion for software testing and made it a focal point of my professional development. I invested significant effort in improving my testing skills, leading to the acquisition of a certification in software testing.<br>I possess excellent communication skills, able to handle complex and technical information and problems
+                  to both technical and non-technical audiences.
+                  As a holder of ILETS certificate with score of 6.0, I consider myself a fluent English speaker; additionally I
+                  have gained a lot of proficiency in communicating in German, thanks to my four-year stay in Hanover,
+                  Germany.<br>I Additionally have engaged in diverse hobbies that complement my role as a Software Test Engineer, including chess for strategic thinking, fixing and repairing items to enhance technical skills, and participating in activities such as swimming and horse riding to maintain a balanced lifestyle. Furthermore, I find inspiration in nature-focused documentaries, while learning new languages serves to broaden my cultural understanding and facilitate connections with individuals from diverse backgrounds. These hobbies reflect my adaptability, problem-solving abilities, and commitment to continuous learning.</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="section1 p-30" id="Profile">
+            <div class="sec-title">
+              
+              <div class="pg-title">Work profile</div>
+            </div>
+            <div class="d-flex-align-center">
+              <div class="text">
+                 
+  Software Test Engineer<br>Vodafone International Services VOIS <br>Apr 2023 - Present<br>
+ - Responsibilities -<br>
+1- Creation of test designs, test processes, test cases and test data.<br>
+2- Carry out testing as per the defined procedures.<br>
+3- Participate in walkthroughs of testing procedures.<br>
+4- Basic knowledge in Agile principles and practices, including Scrum and Kanban.<br>
+5- Automation Testing with Selenium WebDriver using Java for automated web testing, including test script<br>
+development and execution.<br>
+6- Bug tracking using Jira tool.<br><br>
+IoT Specialist<br>
+VODAFONE UK LIMITED<br>
+Nov 2018 - Mar 2019 (5 months)<br>
+-Responsibilities-<br>
+1- Engage with customer using webchat helping them to setup their IoT devices.<br>
+2-Helping customers with theit technical issues, whether with the IoT app or the IoT devices.<br>
+3- Contribute in several tasks related to our team such as :<br>
+(a) Following up with the teams' KPIs.<br>
+(b) Calling customer back upon their requests to our team.<br>
+(c) Many other tasks related to MS excel.<br><br>
+Technical Consultant<br>
+VODAFONE UK LIMITED<br>
+Aug 2016 - Nov 2018 (2 years 4 months)<br>
+-Responsibilities-<br>
+1- Engaging with UK customers over the phone to help them with their technical, and billing queries.<br>
+2- Coordination of upgrades, cancellations and new contracts with the specifed teams.<br>
+3- Contribution in many and different tasks related to our team and customers such as :<br>
+(a) Following up with the teams' KPIs.<br>
+(b) Calling customer back upon their requests to the team.<br>
+(c) Many other tasks related to MS excel.<br>
+              </div>
+              
+            </div>
+          </div>
+          <div class="section1 p-30" id="Portfolio">
+            <div class="sec-title">
+              <div class="pg-title">Education and Certificates</div>
+            </div>
+            <div class="d-flex-align-center">
+              <div class="text">
+              <ul>
+                <li>Leibniz University Hannover<br>
+                     Master's degree, Geoinformation<br>
+                         2019 - 2023<br><br></li>
+                <li>Helwan University Cairo<br>
+                               Bachelor of Engineering - BE, Civil Engineering<br>
+                               2014 - 2019<br><br></li>
+                <li>Certified Tester Foundation Level (CTFL) - ISTQB - International Software Testing<br>
+                        Qualifications Board<br>
+                        Verification link from <a href="http://scr.istqb.org/?name=&number=230426031&orderBy=relevancy&orderDirection=&dateStart=&dateEnd=&expiryStart=&expiryEnd=&certificationBody=&examProvider=&certificationLevel=&country=&resultsPerPage=10" target="_blank" style="color: grey ;">here</a><br>
+                                    Certificate ID : 230426031<br><br></li>
+                <li>The Manager's Toolkit - University of London<br>
+                      Verification link : <a href="https://www.coursera.org/verify/K9CYALZ3BZZF" target="_blank">www.coursera.org/verify/K9CYALZ3BZZF</a><br><br></li>
+                <li>Certified Innovation Leader (CIL) - International Business Management Institute (IBMI)<br>
+                      Verification code : 509767-164-550-1545<br>
+                       Verification link : <a href=https://www.ibm-institute.com/verify/ target="_blank">https://www.ibm-institute.com/verify/</a><br></li>
+                 
+               </ul>
+              </div>
+             </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
